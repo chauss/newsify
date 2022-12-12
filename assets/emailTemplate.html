@@ -1,0 +1,17 @@
+<h1>Hey Chris!</h1>
+<p>Your current public ip address is</p>
+<p thjs:text="${publicIpAdress}"></p>
+<p>Currently free games in EpicGame-Launcher:</p>
+<table>
+  <tr data-thjs-each="game : ${currentFreeGames}">
+    <td data-thjs-text="${game.title}">...</td>
+  </tr>
+</table>
+<p>Upcoming free games in EpicGame-Launcher:</p>
+<table>
+  <tr data-thjs-each="game : ${upcomingFreeGames}">
+    <td data-thjs-text="${game.title}">...</td>
+    <td data-thjs-text="${game.startDate}">...</td>
+    <td data-thjs-text="${game.endDate}">...</td>
+  </tr>
+</table>
